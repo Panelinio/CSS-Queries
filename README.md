@@ -88,5 +88,30 @@ Thanks to this query we can style element by the size of container.\
 Now we added query to change font size. What else we can do?
 
 Well, for now I don't exactly know. I want to make these block in column when the size of container is small.\
-And I've found what I was doing wrong:
-* I should changing main `flex-direction`, not article.
+And I've found what I was doing wrong:\
+I should be changing main's `flex-direction`, not article's.
+
+So let's test something
+```css
+body
+{
+    container: blocks / inline-size;
+}
+
+@container blocks (max-width: 700px)
+{
+    main
+    {
+        flex-direction: column;
+    }
+    
+    article
+    {
+        background-color: #836FFF;
+        font-size: clamp(15px, 18px + 1.33cqw, 30px);
+    }
+}
+```
+
+Am I doing it right? Maybe. I get what I looked for.\
+But I'll read more about container queries and I'll design that page properly.

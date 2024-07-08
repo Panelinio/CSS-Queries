@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+body
+{
+    container: blocks / inline-size;
+}
+
 main
 {
     background-color: #070F2B;
@@ -18,28 +23,33 @@ main
     align-items: center;
     justify-content: center;
     text-align: center;
-    container: blocks / inline-size;
+    
 }
 
 article
 {
     background-color: #0F3460;
     border-radius: 20px;
-    width: 300px;
+    font-size: 25px;
+    width: 70%;
     height: 150px;
     margin: 20px;
     padding: 2px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-@container blocks (min-width: 400px)
+@container blocks (max-width: 700px)
 {
     main
     {
         flex-direction: column;
-        font-size: clamp(14px, 10px + 1.33cqw, 20px);
+    }
+    
+    article
+    {
+        background-color: #836FFF;
+        font-size: clamp(15px, 18px + 1.33cqw, 30px);
     }
 }

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    background-color: #070F2B;
+    color: #FAEDF0;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 500;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    container: blocks / inline-size;
+}
+
+article
+{
+    background-color: #0F3460;
+    border-radius: 20px;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@container blocks (min-width: 400px)
+{
+    main
+    {
+        flex-direction: column;
+        font-size: clamp(14px, 10px + 1.33cqw, 20px);
+    }
+}

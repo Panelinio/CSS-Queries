@@ -89,4 +89,4 @@ Now we added query to change font size. What else we can do?
 
 Well, for now I don't exactly know. I want to make these block in column when the size of container is small.\
 And I've found what I was doing wrong:
-* I should changing main ``flex-direction``, not article.
+* I should changing main `flex-direction`, not article.

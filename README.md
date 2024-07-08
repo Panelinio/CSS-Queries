@@ -17,12 +17,13 @@ Project is created with:
 To run this project, clone repo and click index.html file.
 
 ## Features
-* 
+* Here's my journey of implementation media queries in my projects.
+* First I want to create test project where I can experiment.
 
 ## Sources
 What helped me:
-*[An Interactive Guide to CSS Container Queries](https://ishadeed.com/article/css-container-query-guide/)
-*[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries)
+* [An Interactive Guide to CSS Container Queries](https://ishadeed.com/article/css-container-query-guide/)
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries)
 
 ## Devlog
 Here is my devlog :D
